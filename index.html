@@ -15,11 +15,38 @@
             height: 100vh;
             margin: 0;
             text-align: center;
+            flex-direction: column;
         }
         h1 {
             font-size: 4rem;
             color: #4a4a4a; /* Gris oscuro para el título */
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: #777; /* Gris más claro para el subtítulo */
+            margin-top: 0;
+        }
+        .images-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Espacio entre las imágenes */
+            margin-bottom: 30px;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%; /* Ajustar el tamaño de las imágenes */
+            max-width: 300px; /* Máximo tamaño de las imágenes */
+            display: block;
+            margin: 0 auto;
+        }
+        .image-container p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 10px;
         }
         .button {
             background-color: #a8d8e8; /* Color pastel para el botón */
@@ -39,6 +66,15 @@
 <body>
     <div>
         <h1>ReScalar</h1>
+        <h2>Versión 1.2</h2>
+        
+        <div class="images-container">
+            <div class="image-container">
+                <img src="image2.png" alt="Imagen 2">
+                <p>El programa te deja seleccionar una textura y redimensionarla a tres tamaños diferentes.</p> </p>Trae una ruta definida al NAS, pero se puede cambiar.</p>
+            </div>
+        </div>
+
         <a href="https://github.com/SrAlan/ReScaler/tree/main/files" class="button" target="_blank">Descargar</a>
     </div>
 </body>
